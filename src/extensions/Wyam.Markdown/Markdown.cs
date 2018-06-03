@@ -23,6 +23,8 @@ namespace Wyam.Markdown
     /// Note that <c>@</c> (at) symbols will be automatically HTML escaped for better compatibility with downstream
     /// Razor modules. If you want to include a raw <c>@</c> symbol when <c>EscapeAt()</c> is <c>true</c>, use
     /// <c>\@</c>. Use the <c>EscapeAt()</c> fluent method to modify this behavior.
+    /// 
+    /// Uses the implementation of [Markdig](https://github.com/lunet-io/markdig).
     /// </remarks>
     /// <category>Templates</category>
     public class Markdown : IModule
